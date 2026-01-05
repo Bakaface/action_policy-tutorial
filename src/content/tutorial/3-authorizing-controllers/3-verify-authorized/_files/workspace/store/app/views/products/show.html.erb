@@ -1,0 +1,15 @@
+<h1><%= @product.name %></h1>
+
+<p><%= @product.name %></p>
+
+<div style="margin-top: 20px;">
+  <% if allowed_to?(:edit?, @product) %>
+    <%= link_to "Edit", edit_product_path(@product) %>
+  <% end %>
+
+  <% if allowed_to?(:destroy?, @product) %>
+    <%= button_to "Delete", product_path(@product), method: :delete %>
+  <% end %>
+</div>
+
+<%= link_to "Back to products", products_path %>

@@ -15,4 +15,7 @@ terminal:
       title: 'Command Line'
       allowRedirects: true
     - ['output', 'Setup Logs']
+custom:
+  shell:
+    workdir: '/workspace/store'
 ---

@@ -1,0 +1,15 @@
+<h1>Sign In</h1>
+
+<%= form_with url: session_path do |form| %>
+  <div style="margin-bottom: 15px;">
+    <%= form.label :email_address, "Email" %><br>
+    <%= form.email_field :email_address, autofocus: true, required: true, style: "width: 300px; padding: 8px;" %>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <%= form.label :password %><br>
+    <%= form.password_field :password, required: true, style: "width: 300px; padding: 8px;" %>
+  </div>
+
+  <%= form.submit "Sign In", style: "padding: 10px 20px;" %>
+<% end %>
