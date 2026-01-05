@@ -12,3 +12,10 @@ pnpm-debug.log*
 
 public/ruby.wasm
 public/ruby.wasm.hash
+
+ruby-wasm/build/
+ruby-wasm/dist/
+ruby-wasm/tmp/
+ruby-wasm/vendor/
+ruby-wasm/.bundle/
+ruby-wasm/rubies/
