@@ -19,3 +19,6 @@ ruby-wasm/tmp/
 ruby-wasm/vendor/
 ruby-wasm/.bundle/
 ruby-wasm/rubies/
+
+# Local development linking (created by npm run link:local)
+pnpm-workspace.yaml
