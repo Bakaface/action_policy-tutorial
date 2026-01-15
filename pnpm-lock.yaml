@@ -21,8 +21,8 @@ importers:
         specifier: 0.7.2
         version: 0.7.2(nanostores@0.10.3)(react@18.3.1)
       '@tutorialkit-rb/react':
-        specifier: 0.1.5
-        version: 0.1.5(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
+        specifier: 0.1.6
+        version: 0.1.6(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
       '@tutorialkit-rb/runtime':
         specifier: link:../wasm-on-rails/tutorialkit.rb/packages/runtime
         version: link:../wasm-on-rails/tutorialkit.rb/packages/runtime
@@ -43,14 +43,14 @@ importers:
         specifier: ^3.6.0
         version: 3.6.3(@types/node@20.19.27)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tutorialkit-rb/astro':
-        specifier: 0.1.5
-        version: 0.1.5(@types/node@20.19.27)(@types/react-dom@18.3.7(@types/react@18.3.27))(astro@4.16.19(@types/node@20.19.27)(rollup@4.54.0)(typescript@5.9.3))(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
+        specifier: 0.1.6
+        version: 0.1.6(@types/node@20.19.27)(@types/react-dom@18.3.7(@types/react@18.3.27))(astro@4.16.19(@types/node@20.19.27)(rollup@4.54.0)(typescript@5.9.3))(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
       '@tutorialkit-rb/theme':
-        specifier: 0.1.5
-        version: 0.1.5(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
+        specifier: 0.1.6
+        version: 0.1.6(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
       '@tutorialkit-rb/types':
-        specifier: 0.1.5
-        version: 0.1.5
+        specifier: 0.1.6
+        version: 0.1.6
       '@types/mdast':
         specifier: ^4.0.4
         version: 4.0.4
@@ -1198,19 +1198,19 @@ packages:
   '@stackblitz/sdk@1.11.0':
     resolution: {integrity: sha512-DFQGANNkEZRzFk1/rDP6TcFdM82ycHE+zfl9C/M/jXlH68jiqHWHFMQURLELoD8koxvu/eW5uhg94NSAZlYrUQ==}
 
-  '@tutorialkit-rb/astro@0.1.5':
-    resolution: {integrity: sha512-vp8ZC3BEWv476JALJ0GJoflNhpI5kyvJGOp/f7Txy4yqT9v0/48Do1+ZaRLTLrQbTWNFxZ9urDMMBMXu7PBC5Q==}
+  '@tutorialkit-rb/astro@0.1.6':
+    resolution: {integrity: sha512-9TDLZY+0cWuHOTFawtOdHiPKv+ZNKWxISnLI7OekQcBGM5ISMgfZnoVBHV6Flh1d4jZZ0N7ZUlodFSFBQkQJIw==}
     peerDependencies:
       astro: ^4.15.0
 
-  '@tutorialkit-rb/react@0.1.5':
-    resolution: {integrity: sha512-wOBrL293TjJYahwkGndHMQIgAlyn+zwV53vyCqJIf0KSkeHo5Ro9EEnoQaVXeBm182YLQt9ZbfmpftNnb+Kb2A==}
+  '@tutorialkit-rb/react@0.1.6':
+    resolution: {integrity: sha512-43TFYflZlhSpH4nBlo1xZlZAl/CaH5zmpV+xFzdu6zU22togl83OOOhSGrijXczeJuTRr9trQYA78xwVkogiEw==}
 
-  '@tutorialkit-rb/theme@0.1.5':
-    resolution: {integrity: sha512-Nje8k5gUNawQmRx7Ei+pn8nHQiBz+zgrQ47LP21pVfAUsl+pvqWe7PVgiC2BelswOfinPzDz1a65vd80iIQvgw==}
+  '@tutorialkit-rb/theme@0.1.6':
+    resolution: {integrity: sha512-9R51uMVJFS45IPS4j2E/zKIvCWm++V9f2tgjCee7FUB09e9aWnJhzWFV5FQLYz/hSxWM0yr1vmd/ZJWm0r9QeQ==}
 
-  '@tutorialkit-rb/types@0.1.5':
-    resolution: {integrity: sha512-wvypYLn4lNtV0jVUITEwDh67s1pObk6xfAj3tSZJcfKDw9t1qlHLhMHDCORXq4gHjXBpttXHObk9l8xloPFCXw==}
+  '@tutorialkit-rb/types@0.1.6':
+    resolution: {integrity: sha512-5YDShOzIo4xOQ81XZg7ViX2hYOTE+FwlogHGFFrbljuB8wOK6RFj4o3kwTaixxn+R1GuEQXEd3xVi1IDSCV0Mw==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -4343,7 +4343,7 @@ snapshots:
 
   '@stackblitz/sdk@1.11.0': {}
 
-  '@tutorialkit-rb/astro@0.1.5(@types/node@20.19.27)(@types/react-dom@18.3.7(@types/react@18.3.27))(astro@4.16.19(@types/node@20.19.27)(rollup@4.54.0)(typescript@5.9.3))(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))':
+  '@tutorialkit-rb/astro@0.1.6(@types/node@20.19.27)(@types/react-dom@18.3.7(@types/react@18.3.27))(astro@4.16.19(@types/node@20.19.27)(rollup@4.54.0)(typescript@5.9.3))(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))':
     dependencies:
       '@astrojs/mdx': 3.1.9(astro@4.16.19(@types/node@20.19.27)(rollup@4.54.0)(typescript@5.9.3))
       '@astrojs/react': 3.6.3(@types/node@20.19.27)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4351,10 +4351,10 @@ snapshots:
       '@expressive-code/plugin-line-numbers': 0.35.6
       '@nanostores/react': 0.7.2(nanostores@0.10.3)(react@18.3.1)
       '@stackblitz/sdk': 1.11.0
-      '@tutorialkit-rb/react': 0.1.5(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
+      '@tutorialkit-rb/react': 0.1.6(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
       '@tutorialkit-rb/runtime': link:../wasm-on-rails/tutorialkit.rb/packages/runtime
-      '@tutorialkit-rb/theme': 0.1.5(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
-      '@tutorialkit-rb/types': 0.1.5
+      '@tutorialkit-rb/theme': 0.1.6(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
+      '@tutorialkit-rb/types': 0.1.6
       '@types/react': 18.3.27
       '@unocss/reset': 0.62.4
       '@webcontainer/api': 1.5.1
@@ -4392,7 +4392,7 @@ snapshots:
       - terser
       - vite
 
-  '@tutorialkit-rb/react@0.1.5(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))':
+  '@tutorialkit-rb/react@0.1.6(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))':
     dependencies:
       '@codemirror/autocomplete': 6.20.0
       '@codemirror/commands': 6.10.1
@@ -4419,7 +4419,7 @@ snapshots:
       '@radix-ui/react-dialog': 1.1.15(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@replit/codemirror-lang-svelte': 6.0.0(@codemirror/autocomplete@6.20.0)(@codemirror/lang-css@6.3.1)(@codemirror/lang-html@6.4.11)(@codemirror/lang-javascript@6.2.4)(@codemirror/language@6.12.1)(@codemirror/state@6.5.3)(@codemirror/view@6.39.8)(@lezer/common@1.5.0)(@lezer/highlight@1.2.3)(@lezer/javascript@1.5.4)(@lezer/lr@1.4.5)
       '@tutorialkit-rb/runtime': link:../wasm-on-rails/tutorialkit.rb/packages/runtime
-      '@tutorialkit-rb/theme': 0.1.5(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
+      '@tutorialkit-rb/theme': 0.1.6(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
       '@webcontainer/api': 1.5.1
       '@xterm/addon-fit': 0.10.0(@xterm/xterm@5.5.0)
       '@xterm/addon-web-links': 0.11.0(@xterm/xterm@5.5.0)
@@ -4441,7 +4441,7 @@ snapshots:
       - supports-color
       - vite
 
-  '@tutorialkit-rb/theme@0.1.5(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))':
+  '@tutorialkit-rb/theme@0.1.6(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))':
     dependencies:
       '@iconify-json/ph': 1.2.2
       '@iconify-json/svg-spinners': 1.2.4
@@ -4454,7 +4454,7 @@ snapshots:
       - supports-color
       - vite
 
-  '@tutorialkit-rb/types@0.1.5':
+  '@tutorialkit-rb/types@0.1.6':
     dependencies:
       zod: 3.23.8
 
