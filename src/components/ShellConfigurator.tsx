@@ -1,5 +1,7 @@
 import { useStore } from '@nanostores/react';
-import type { WebContainerProcess } from '@webcontainer/api';
+interface WebContainerProcess {
+  exit: Promise<number>;
+}
 import { useEffect, useState } from 'react';
 import tutorialStore from 'tutorialkit:store';
 

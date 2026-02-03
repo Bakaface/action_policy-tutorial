@@ -12,6 +12,7 @@
   },
   "exclude": [
     "dist",
-    "ruby-wasm"
+    "ruby-wasm",
+    "src/templates"
   ]
 }

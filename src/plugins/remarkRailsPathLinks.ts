@@ -1,5 +1,4 @@
 import type { Root, InlineCode } from 'mdast';
-import type { Plugin } from 'unified';
 import { visit } from 'unist-util-visit';
 
 // rails path patterns
@@ -9,10 +8,10 @@ export interface RailsPathLinkOptions {
   className?: string;
 }
 
-const remarkRailsPathLinks: Plugin<[RailsPathLinkOptions?], Root> = (options = {}) => {
+const remarkRailsPathLinks = (options: RailsPathLinkOptions = {}) => {
   const className = options.className || 'rails-path-link';
 
-  return (tree, _) => {
+  return (tree: Root) => {
     visit(tree, 'inlineCode', (node: InlineCode, index, parent) => {
       if (!parent || typeof index !== 'number') {
         return;

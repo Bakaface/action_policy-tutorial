@@ -1,5 +1,10 @@
 import { useStore } from '@nanostores/react';
-import type { WebContainer } from '@webcontainer/api';
+interface WebContainer {
+  fs: {
+    writeFile(path: string, data: string | Uint8Array): Promise<void>;
+  };
+  spawn(command: string, args: string[]): Promise<{ exit: Promise<number> }>;
+}
 import { useRef, useEffect } from 'react';
 import { webcontainer } from 'tutorialkit:core';
 import tutorialStore from 'tutorialkit:store';
@@ -70,7 +75,7 @@ export function FileManager() {
       const opfsRoot = await navigator.storage.getDirectory();
       const fileHandle = await opfsRoot.getFileHandle(cacheFileName, { create: true });
       const writable = await fileHandle.createWritable();
-      await writable.write(wasmData);
+      await writable.write(wasmData as unknown as ArrayBuffer);
       await writable.close();
       console.log(`Ruby WASM file ${cacheFileName} cached`);
     } catch (error) {
