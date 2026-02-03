@@ -50,6 +50,14 @@ jobs:
             public/ruby.wasm.hash
           key: ${{ runner.os }}-v1-${{ hashFiles('ruby-wasm/Gemfile.lock') }}-ruby-wasm-module
 
+      - name: Install wasi-vfs
+        if: steps.cache-ruby-wasm-module.outputs.cache-hit != 'true'
+        run: |
+          curl -LO "https://github.com/kateinoigakukun/wasi-vfs/releases/download/v0.5.5/wasi-vfs-cli-x86_64-unknown-linux-gnu.zip"
+          unzip wasi-vfs-cli-x86_64-unknown-linux-gnu.zip
+          sudo mv wasi-vfs /usr/local/bin/wasi-vfs
+          wasi-vfs --version
+
       - name: Build ruby.wasm
         if: steps.cache-ruby-wasm-module.outputs.cache-hit != 'true'
         run: pnpm run build:wasm
