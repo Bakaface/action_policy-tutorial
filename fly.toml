@@ -2,7 +2,7 @@
 # See https://fly.io/docs/reference/configuration/
 
 app = 'action-policy-tutorial'
-primary_region = 'sea'
+primary_region = 'sjc'
 
 [build]
 
