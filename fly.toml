@@ -1,0 +1,18 @@
+# Fly.io configuration for action_policy-tutorial
+# See https://fly.io/docs/reference/configuration/
+
+app = 'action-policy-tutorial'
+primary_region = 'sea'
+
+[build]
+
+[http_service]
+  internal_port = 80
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  size = 'shared-cpu-1x'

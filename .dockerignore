@@ -1,0 +1,3 @@
+# Only include dist/ for the Docker build
+*
+!dist
