@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@tutorialkit-rb/runtime': link:../wasm-on-rails/tutorialkit.rb/packages/runtime
-
 importers:
 
   .:
@@ -24,8 +21,8 @@ importers:
         specifier: 0.1.6
         version: 0.1.6(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
       '@tutorialkit-rb/runtime':
-        specifier: link:../wasm-on-rails/tutorialkit.rb/packages/runtime
-        version: link:../wasm-on-rails/tutorialkit.rb/packages/runtime
+        specifier: 0.1.6
+        version: 0.1.6
       nanostores:
         specifier: ^0.10.3
         version: 0.10.3
@@ -1205,6 +1202,9 @@ packages:
 
   '@tutorialkit-rb/react@0.1.6':
     resolution: {integrity: sha512-43TFYflZlhSpH4nBlo1xZlZAl/CaH5zmpV+xFzdu6zU22togl83OOOhSGrijXczeJuTRr9trQYA78xwVkogiEw==}
+
+  '@tutorialkit-rb/runtime@0.1.6':
+    resolution: {integrity: sha512-0oBGYZnef+zuiL8gmCgyC/IZ7OZsBrIqjxu6MP5FXG9PrIXNZKctHcgYrY0MEj6rdVFvmv0z9M1wSjmVHqof1Q==}
 
   '@tutorialkit-rb/theme@0.1.6':
     resolution: {integrity: sha512-9R51uMVJFS45IPS4j2E/zKIvCWm++V9f2tgjCee7FUB09e9aWnJhzWFV5FQLYz/hSxWM0yr1vmd/ZJWm0r9QeQ==}
@@ -4352,7 +4352,7 @@ snapshots:
       '@nanostores/react': 0.7.2(nanostores@0.10.3)(react@18.3.1)
       '@stackblitz/sdk': 1.11.0
       '@tutorialkit-rb/react': 0.1.6(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(postcss@8.5.6)(react-dom@18.3.1(react@18.3.1))(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
-      '@tutorialkit-rb/runtime': link:../wasm-on-rails/tutorialkit.rb/packages/runtime
+      '@tutorialkit-rb/runtime': 0.1.6
       '@tutorialkit-rb/theme': 0.1.6(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
       '@tutorialkit-rb/types': 0.1.6
       '@types/react': 18.3.27
@@ -4418,7 +4418,7 @@ snapshots:
       '@radix-ui/react-context-menu': 2.2.16(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-dialog': 1.1.15(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@replit/codemirror-lang-svelte': 6.0.0(@codemirror/autocomplete@6.20.0)(@codemirror/lang-css@6.3.1)(@codemirror/lang-html@6.4.11)(@codemirror/lang-javascript@6.2.4)(@codemirror/language@6.12.1)(@codemirror/state@6.5.3)(@codemirror/view@6.39.8)(@lezer/common@1.5.0)(@lezer/highlight@1.2.3)(@lezer/javascript@1.5.4)(@lezer/lr@1.4.5)
-      '@tutorialkit-rb/runtime': link:../wasm-on-rails/tutorialkit.rb/packages/runtime
+      '@tutorialkit-rb/runtime': 0.1.6
       '@tutorialkit-rb/theme': 0.1.6(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))
       '@webcontainer/api': 1.5.1
       '@xterm/addon-fit': 0.10.0(@xterm/xterm@5.5.0)
@@ -4440,6 +4440,13 @@ snapshots:
       - rollup
       - supports-color
       - vite
+
+  '@tutorialkit-rb/runtime@0.1.6':
+    dependencies:
+      '@tutorialkit-rb/types': 0.1.6
+      '@webcontainer/api': 1.5.1
+      nanostores: 0.10.3
+      picomatch: 4.0.3
 
   '@tutorialkit-rb/theme@0.1.6(postcss@8.5.6)(rollup@4.54.0)(vite@5.4.21(@types/node@20.19.27))':
     dependencies:
