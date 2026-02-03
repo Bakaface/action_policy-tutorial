@@ -40,6 +40,7 @@ jobs:
             ruby-wasm/build
             ruby-wasm/rubies
           key: ${{ runner.os }}-v1-ruby-wasm
+          save-always: true
 
       - name: Cache compiled ruby.wasm module
         id: cache-ruby-wasm-module
