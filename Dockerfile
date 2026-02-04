@@ -7,8 +7,10 @@ FROM nginx:alpine
 COPY dist /usr/share/nginx/html
 
 # Add required headers for WebContainers (SharedArrayBuffer support)
+# CORP header allows embedding in cross-origin isolated pages
 RUN echo 'add_header Cross-Origin-Embedder-Policy "require-corp";' > /etc/nginx/conf.d/custom-headers.conf \
-    && echo 'add_header Cross-Origin-Opener-Policy "same-origin";' >> /etc/nginx/conf.d/custom-headers.conf
+    && echo 'add_header Cross-Origin-Opener-Policy "same-origin";' >> /etc/nginx/conf.d/custom-headers.conf \
+    && echo 'add_header Cross-Origin-Resource-Policy "cross-origin";' >> /etc/nginx/conf.d/custom-headers.conf
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
